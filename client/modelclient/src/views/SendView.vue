@@ -15,7 +15,7 @@ let model: Ref<Model> | Ref<null> = ref(null);
 const slug = computed(() => route.params.item);
 
 function onSubmit() {
-  if (model.value?.price !== 0) {
+  if (model.value?.price != 0) {
     toastWarn("Потрібно додати споіб оплати (буде в ближайший час)")
     return;
   }
