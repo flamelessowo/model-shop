@@ -20,7 +20,7 @@ function onSubmit() {
     return;
   }
   const file_uri = SERVER_URI + model.value?.file.substring(1);
-  saveAs(file_uri);
+  saveAs(file_uri, `model${model.value?.format}`);
 }
 
 onMounted(async () => {
